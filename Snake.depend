@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1650607431 source:c:\users\nathan\documents\codeblocks\personal\snake\player.cpp
+	"player.h"
+	<iostream>
+
+1650601155 c:\users\nathan\documents\codeblocks\personal\snake\player.h
+
+1650586079 source:c:\users\nathan\documents\codeblocks\personal\snake\grid.cpp
+	"grid.h"
+	<iostream>
+
+1650586101 c:\users\nathan\documents\codeblocks\personal\snake\grid.h
+
+1650612918 source:c:\users\nathan\documents\codeblocks\personal\snake\main.cpp
+	<iostream>
+	<time.h>
+	<conio.h>
+	<windows.h>
+	<stdlib.h>
+	<fstream>
+	"grid.h"
+	"player.h"
+

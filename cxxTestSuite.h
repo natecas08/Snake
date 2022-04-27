@@ -53,6 +53,7 @@ class unitTestsEquals : public CxxTest::TestSuite
 
       void testPlayerDirection(void)
       {
+          //check if player's direction gets changed
           PLAYER p1(0,0);
           char setChar = 'R';
           p1.setDir(setChar);

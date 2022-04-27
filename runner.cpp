@@ -1,5 +1,5 @@
 /* Generated file, do not edit */
-
+/*
 #ifndef CXXTEST_RUNNING
 #define CXXTEST_RUNNING
 #endif
@@ -60,58 +60,76 @@ public:
 static unitTestsNotEquals suite_unitTestsNotEquals;
 
 static CxxTest::List Tests_unitTestsNotEquals = { 0, 0 };
-CxxTest::StaticSuiteDescription suiteDescription_unitTestsNotEquals( "cxxTestSuite.h", 65, "unitTestsNotEquals", suite_unitTestsNotEquals, Tests_unitTestsNotEquals );
+CxxTest::StaticSuiteDescription suiteDescription_unitTestsNotEquals( "cxxTestSuite.h", 66, "unitTestsNotEquals", suite_unitTestsNotEquals, Tests_unitTestsNotEquals );
 
 static class TestDescription_suite_unitTestsNotEquals_testPlayerChangeHead : public CxxTest::RealTestDescription {
 public:
- TestDescription_suite_unitTestsNotEquals_testPlayerChangeHead() : CxxTest::RealTestDescription( Tests_unitTestsNotEquals, suiteDescription_unitTestsNotEquals, 68, "testPlayerChangeHead" ) {}
+ TestDescription_suite_unitTestsNotEquals_testPlayerChangeHead() : CxxTest::RealTestDescription( Tests_unitTestsNotEquals, suiteDescription_unitTestsNotEquals, 69, "testPlayerChangeHead" ) {}
  void runTest() { suite_unitTestsNotEquals.testPlayerChangeHead(); }
 } testDescription_suite_unitTestsNotEquals_testPlayerChangeHead;
 
 static class TestDescription_suite_unitTestsNotEquals_testPlayerInvalidDirection : public CxxTest::RealTestDescription {
 public:
- TestDescription_suite_unitTestsNotEquals_testPlayerInvalidDirection() : CxxTest::RealTestDescription( Tests_unitTestsNotEquals, suiteDescription_unitTestsNotEquals, 85, "testPlayerInvalidDirection" ) {}
+ TestDescription_suite_unitTestsNotEquals_testPlayerInvalidDirection() : CxxTest::RealTestDescription( Tests_unitTestsNotEquals, suiteDescription_unitTestsNotEquals, 86, "testPlayerInvalidDirection" ) {}
  void runTest() { suite_unitTestsNotEquals.testPlayerInvalidDirection(); }
 } testDescription_suite_unitTestsNotEquals_testPlayerInvalidDirection;
 
 static class TestDescription_suite_unitTestsNotEquals_testGridInvalidLabel : public CxxTest::RealTestDescription {
 public:
- TestDescription_suite_unitTestsNotEquals_testGridInvalidLabel() : CxxTest::RealTestDescription( Tests_unitTestsNotEquals, suiteDescription_unitTestsNotEquals, 103, "testGridInvalidLabel" ) {}
+ TestDescription_suite_unitTestsNotEquals_testGridInvalidLabel() : CxxTest::RealTestDescription( Tests_unitTestsNotEquals, suiteDescription_unitTestsNotEquals, 104, "testGridInvalidLabel" ) {}
  void runTest() { suite_unitTestsNotEquals.testGridInvalidLabel(); }
 } testDescription_suite_unitTestsNotEquals_testGridInvalidLabel;
 
 static unitTestIsFalse suite_unitTestIsFalse;
 
 static CxxTest::List Tests_unitTestIsFalse = { 0, 0 };
-CxxTest::StaticSuiteDescription suiteDescription_unitTestIsFalse( "cxxTestSuite.h", 115, "unitTestIsFalse", suite_unitTestIsFalse, Tests_unitTestIsFalse );
+CxxTest::StaticSuiteDescription suiteDescription_unitTestIsFalse( "cxxTestSuite.h", 116, "unitTestIsFalse", suite_unitTestIsFalse, Tests_unitTestIsFalse );
 
 static class TestDescription_suite_unitTestIsFalse_testSegmentActive : public CxxTest::RealTestDescription {
 public:
- TestDescription_suite_unitTestIsFalse_testSegmentActive() : CxxTest::RealTestDescription( Tests_unitTestIsFalse, suiteDescription_unitTestIsFalse, 118, "testSegmentActive" ) {}
+ TestDescription_suite_unitTestIsFalse_testSegmentActive() : CxxTest::RealTestDescription( Tests_unitTestIsFalse, suiteDescription_unitTestIsFalse, 119, "testSegmentActive" ) {}
  void runTest() { suite_unitTestIsFalse.testSegmentActive(); }
 } testDescription_suite_unitTestIsFalse_testSegmentActive;
 
 static unitTestIsTrue suite_unitTestIsTrue;
 
 static CxxTest::List Tests_unitTestIsTrue = { 0, 0 };
-CxxTest::StaticSuiteDescription suiteDescription_unitTestIsTrue( "cxxTestSuite.h", 126, "unitTestIsTrue", suite_unitTestIsTrue, Tests_unitTestIsTrue );
+CxxTest::StaticSuiteDescription suiteDescription_unitTestIsTrue( "cxxTestSuite.h", 127, "unitTestIsTrue", suite_unitTestIsTrue, Tests_unitTestIsTrue );
 
 static class TestDescription_suite_unitTestIsTrue_testSegmentActive : public CxxTest::RealTestDescription {
 public:
- TestDescription_suite_unitTestIsTrue_testSegmentActive() : CxxTest::RealTestDescription( Tests_unitTestIsTrue, suiteDescription_unitTestIsTrue, 129, "testSegmentActive" ) {}
+ TestDescription_suite_unitTestIsTrue_testSegmentActive() : CxxTest::RealTestDescription( Tests_unitTestIsTrue, suiteDescription_unitTestIsTrue, 130, "testSegmentActive" ) {}
  void runTest() { suite_unitTestIsTrue.testSegmentActive(); }
 } testDescription_suite_unitTestIsTrue_testSegmentActive;
 
 static unitTestLessThan suite_unitTestLessThan;
 
 static CxxTest::List Tests_unitTestLessThan = { 0, 0 };
-CxxTest::StaticSuiteDescription suiteDescription_unitTestLessThan( "cxxTestSuite.h", 138, "unitTestLessThan", suite_unitTestLessThan, Tests_unitTestLessThan );
+CxxTest::StaticSuiteDescription suiteDescription_unitTestLessThan( "cxxTestSuite.h", 139, "unitTestLessThan", suite_unitTestLessThan, Tests_unitTestLessThan );
 
 static class TestDescription_suite_unitTestLessThan_testScoreIncrease : public CxxTest::RealTestDescription {
 public:
- TestDescription_suite_unitTestLessThan_testScoreIncrease() : CxxTest::RealTestDescription( Tests_unitTestLessThan, suiteDescription_unitTestLessThan, 141, "testScoreIncrease" ) {}
+ TestDescription_suite_unitTestLessThan_testScoreIncrease() : CxxTest::RealTestDescription( Tests_unitTestLessThan, suiteDescription_unitTestLessThan, 142, "testScoreIncrease" ) {}
  void runTest() { suite_unitTestLessThan.testScoreIncrease(); }
 } testDescription_suite_unitTestLessThan_testScoreIncrease;
 
+static integrationTests suite_integrationTests;
+
+static CxxTest::List Tests_integrationTests = { 0, 0 };
+CxxTest::StaticSuiteDescription suiteDescription_integrationTests( "cxxTestSuite.h", 158, "integrationTests", suite_integrationTests, Tests_integrationTests );
+
+static class TestDescription_suite_integrationTests_testSegmentPush : public CxxTest::RealTestDescription {
+public:
+ TestDescription_suite_integrationTests_testSegmentPush() : CxxTest::RealTestDescription( Tests_integrationTests, suiteDescription_integrationTests, 161, "testSegmentPush" ) {}
+ void runTest() { suite_integrationTests.testSegmentPush(); }
+} testDescription_suite_integrationTests_testSegmentPush;
+
+static class TestDescription_suite_integrationTests_testPlayerUpdate : public CxxTest::RealTestDescription {
+public:
+ TestDescription_suite_integrationTests_testPlayerUpdate() : CxxTest::RealTestDescription( Tests_integrationTests, suiteDescription_integrationTests, 171, "testPlayerUpdate" ) {}
+ void runTest() { suite_integrationTests.testPlayerUpdate(); }
+} testDescription_suite_integrationTests_testPlayerUpdate;
+
 #include <cxxtest/Root.cpp>
 const char* CxxTest::RealWorldDescription::_worldName = "cxxtest";
+*/

@@ -154,3 +154,40 @@ class unitTestLessThan : public CxxTest::TestSuite
             TS_ASSERT_LESS_THAN_EQUALS(s2, fScore);
         }
 };
+
+class integrationTests : public CxxTest::TestSuite
+{
+    public:
+        void testSegmentPush(void)
+        {
+            //if a player's push function is called, the
+            //next segment in its tail should be active
+
+            PLAYER p1(0,0);
+            p1.push(0,0);
+            TS_ASSERT(p1.segmentArray[1].getActive());
+        }
+
+        void testPlayerUpdate(void)
+        {
+            //if a player's segment position has changed, the segment
+            //following that one should replace its location
+
+            int curX = 5;
+            int curY = 5;
+            PLAYER p1(curX,curY);
+            p1.push(curX, curY);
+
+            p1.update(curX, curY+1);
+
+            int newHeadX = p1.segmentArray[0].getX();
+            int newHeadY = p1.segmentArray[0].getY();
+            int newTailX = p1.segmentArray[1].getX();
+            int newTailY = p1.segmentArray[1].getY();
+
+            TS_ASSERT_EQUALS(newHeadX, curX);
+            TS_ASSERT_EQUALS(newHeadY, curY+1);
+            TS_ASSERT_EQUALS(newTailX, curX);
+            TS_ASSERT_EQUALS(newTailY, curY);
+        }
+};

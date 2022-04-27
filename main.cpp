@@ -16,7 +16,7 @@ void startGame();
 void listHighScores();
 //void saveScore(int);
 
-/*
+
 int main()
 {
     srand(time(0));
@@ -52,7 +52,7 @@ int main()
     }
     return 0;
 }
-*/
+
 
 void startGame()
 {

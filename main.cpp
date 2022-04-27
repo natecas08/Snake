@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <fstream>
 
-#include "grid.h"
+#include "cxxTestSuite.h"
 #include "player.h"
 
 #define mapSize 20
@@ -14,8 +14,9 @@ using namespace std;
 
 void startGame();
 void listHighScores();
-void saveScore(int);
+//void saveScore(int);
 
+/*
 int main()
 {
     srand(time(0));
@@ -41,7 +42,6 @@ int main()
                 break;
             case 'b':
                 listHighScores();
-                system("pause");
                 break;
             default:
                 cout << "Exiting game" << endl;
@@ -52,6 +52,7 @@ int main()
     }
     return 0;
 }
+*/
 
 void startGame()
 {
@@ -158,7 +159,7 @@ void startGame()
             system("pause");
             running = false;
             gameOver = true;
-            saveScore(player.getScore());
+            //saveScore(player.getScore());
         }
         else if(gameMap.m_Grid[cX][cY].getLabel() == 3)
         {
@@ -304,6 +305,7 @@ void startGame()
     }
 }
 
+
 void listHighScores()
 {
     system("cls");
@@ -323,8 +325,6 @@ void listHighScores()
         }
     }
     hs.close();
-    cout << fSize;
-    system("pause");
 
     int scores[fSize/2];
     string names[fSize/2];
@@ -355,6 +355,7 @@ void listHighScores()
     }
 }
 
+/*
 void saveScore(int s)
 {
     bool newHighScore = false;
@@ -459,3 +460,6 @@ void saveScore(int s)
         }
     }
 }
+*/
+
+
